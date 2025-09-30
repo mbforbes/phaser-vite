@@ -20,7 +20,7 @@ const config = {
    scene: [Boot, Preloader, MainMenu, MainGame, GameOver],
 };
 
-const StartGame = (parent) => {
+const StartGame = (parent?: HTMLElement | string | null) => {
    return new Game({ ...config, parent });
 };
 
